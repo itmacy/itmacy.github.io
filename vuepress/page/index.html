@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress构建个人博客网站 | itmacy&#39;s blog</title>
+    <meta name="description" content="itmacy的个人网站">
+    <link rel="icon" href="/assets/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.1010baaa.css" as="style"><link rel="preload" href="/assets/js/app.5b174765.js" as="script"><link rel="preload" href="/assets/js/2.be714178.js" as="script"><link rel="preload" href="/assets/js/8.c16753be.js" as="script"><link rel="prefetch" href="/assets/js/10.f18013e7.js"><link rel="prefetch" href="/assets/js/11.40ef8625.js"><link rel="prefetch" href="/assets/js/12.09abf155.js"><link rel="prefetch" href="/assets/js/13.8ec2c1e6.js"><link rel="prefetch" href="/assets/js/14.8163425d.js"><link rel="prefetch" href="/assets/js/15.47a4c417.js"><link rel="prefetch" href="/assets/js/16.e8a3a770.js"><link rel="prefetch" href="/assets/js/17.ed547990.js"><link rel="prefetch" href="/assets/js/18.38919935.js"><link rel="prefetch" href="/assets/js/19.bf7fafe9.js"><link rel="prefetch" href="/assets/js/3.74b9faf5.js"><link rel="prefetch" href="/assets/js/4.39ca0f3c.js"><link rel="prefetch" href="/assets/js/5.162d22dc.js"><link rel="prefetch" href="/assets/js/6.a71c1f1d.js"><link rel="prefetch" href="/assets/js/7.709cb77c.js"><link rel="prefetch" href="/assets/js/9.f84bceb0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1010baaa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/avatar_circle.png" alt="itmacy's blog" class="logo"> <span class="site-name can-hide">itmacy's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/page/web/" class="nav-link">前端</a></div><div class="nav-item"><a href="/page/java/" class="nav-link">java</a></div><div class="nav-item"><a href="/page/cpp/" class="nav-link">c++</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于作者" class="dropdown-title"><span class="title">关于作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/itmacy" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.cnblogs.com/itmacy/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客园
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/88c9ba7ac8bd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简书
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/wechat.html" class="nav-link">微信公众号</a></li><li class="dropdown-item"><!----> <a href="/about.html" class="nav-link">关于</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/page/web/" class="nav-link">前端</a></div><div class="nav-item"><a href="/page/java/" class="nav-link">java</a></div><div class="nav-item"><a href="/page/cpp/" class="nav-link">c++</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于作者" class="dropdown-title"><span class="title">关于作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/itmacy" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.cnblogs.com/itmacy/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客园
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com/u/88c9ba7ac8bd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  简书
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/wechat.html" class="nav-link">微信公众号</a></li><li class="dropdown-item"><!----> <a href="/about.html" class="nav-link">关于</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/page/" class="active sidebar-link">VuePress构建个人博客网站</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/page/#windows环境搭建" class="sidebar-link">Windows环境搭建</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/page/#安装node-js" class="sidebar-link">安装node.js</a></li><li class="sidebar-sub-header"><a href="/page/#全局安装-vuepress" class="sidebar-link">全局安装 VuePress</a></li><li class="sidebar-sub-header"><a href="/page/#创建项目" class="sidebar-link">创建项目</a></li><li class="sidebar-sub-header"><a href="/page/#初始化项目" class="sidebar-link">初始化项目</a></li><li class="sidebar-sub-header"><a href="/page/#创建文件夹和文件" class="sidebar-link">创建文件夹和文件</a></li><li class="sidebar-sub-header"><a href="/page/#添加配置" class="sidebar-link">添加配置</a></li><li class="sidebar-sub-header"><a href="/page/#启动项目" class="sidebar-link">启动项目</a></li></ul></li><li class="sidebar-sub-header"><a href="/page/#进阶" class="sidebar-link">进阶</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/page/#添加页面" class="sidebar-link">添加页面</a></li><li class="sidebar-sub-header"><a href="/page/#部署" class="sidebar-link">部署</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress构建个人博客网站"><a href="#vuepress构建个人博客网站" class="header-anchor">#</a> VuePress构建个人博客网站</h1> <blockquote><ul><li>VuePress Hello World 版本</li> <li>官网：https://www.vuepress.cn/guide/</li> <li>参考：https://www.cnblogs.com/softidea/p/10084946.html</li></ul></blockquote> <h2 id="windows环境搭建"><a href="#windows环境搭建" class="header-anchor">#</a> Windows环境搭建</h2> <h3 id="安装node-js"><a href="#安装node-js" class="header-anchor">#</a> 安装node.js</h3> <blockquote><p>官网下载，傻瓜式安装</p></blockquote> <h3 id="全局安装-vuepress"><a href="#全局安装-vuepress" class="header-anchor">#</a> 全局安装 VuePress</h3> <blockquote><p><code>npm install -g vuepress</code></p></blockquote> <h3 id="创建项目"><a href="#创建项目" class="header-anchor">#</a> 创建项目</h3> <blockquote><p>创建一个名为<code>vuepress-demo</code>的项目</p></blockquote> <h3 id="初始化项目"><a href="#初始化项目" class="header-anchor">#</a> 初始化项目</h3> <blockquote><p>进入到项目后，执行命令 <code>npm init</code> 或 <code>npm init -y</code>（默认yes），此时会生成一个<code>package.json</code>的文件</p></blockquote> <h3 id="创建文件夹和文件"><a href="#创建文件夹和文件" class="header-anchor">#</a> 创建文件夹和文件</h3> <blockquote><p>项目目录结构如下</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>|- vuepress-demo
+    |- docs
+        |- .vuepress
+            |- public
+            |- config.js
+        |- README.md
+    |- package.json
+</code></pre></div><blockquote><p>新建文件夹<code>docs</code>，在<code>docs</code>文件夹里面新建文件夹<code>.vuepress</code>和文件<code>READEME.md</code></p></blockquote> <ul><li>由于直接创建<code>.vuepress</code>文件是不成功的，此时需要使用命令行的方式创建文件：<code>mkdir .vuepress</code></li> <li>在<code>.vuepress</code>文件里面新建文件夹<code>public</code>和文件<code>config.js</code></li></ul> <p>说明：</p> <blockquote><p>具体的目录和文件含义可以
+参考官网：https://www.vuepress.cn/guide/directory-structure.html</p></blockquote> <h3 id="添加配置"><a href="#添加配置" class="header-anchor">#</a> 添加配置</h3> <ul><li>在<code>config.js</code>中配置网站标题，描述和菜单信息等</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">'itmacy\'s blog'</span><span class="token punctuation">,</span>
+  description<span class="token punctuation">:</span> <span class="token string">'itmacy的个人网站'</span><span class="token punctuation">,</span>
+  head<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">// 注入到当前页面的 HTML &lt;head&gt; 中的标签</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token punctuation">:</span> <span class="token string">'/logo.jpg'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 增加一个自定义的 favicon(网页标签的图标)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  base<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token comment">// 这是部署到github相关的配置</span>
+  markdown<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    lineNumbers<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">// 代码块显示行号</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nav<span class="token punctuation">:</span><span class="token punctuation">[</span> <span class="token comment">// 导航栏配置</span>
+      <span class="token punctuation">{</span>text<span class="token punctuation">:</span> <span class="token string">'github'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://github.com/itmacy'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>text<span class="token punctuation">:</span> <span class="token string">'博客园'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://www.cnblogs.com/itmacy/'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>text<span class="token punctuation">:</span> <span class="token string">'简书'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://www.jianshu.com/u/88c9ba7ac8bd'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>text<span class="token punctuation">:</span> <span class="token string">'关于'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/about.md'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sidebar<span class="token punctuation">:</span> <span class="token string">'auto'</span><span class="token punctuation">,</span> <span class="token comment">// 侧边栏配置</span>
+    sidebarDepth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 侧边栏显示2级</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><ul><li>在<code>package.json</code>中添加两个启动命令</li></ul> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="启动项目"><a href="#启动项目" class="header-anchor">#</a> 启动项目</h3> <ul><li>命令行执行 <code>npm run dev</code></li> <li>浏览器访问：<code>http://localhost:8080</code></li></ul> <h2 id="进阶"><a href="#进阶" class="header-anchor">#</a> 进阶</h2> <h3 id="添加页面"><a href="#添加页面" class="header-anchor">#</a> 添加页面</h3> <p>说明约定大于配置，/README.md默认映射到/，即访问http://localhost:8080/默认访问的是docs下的README.md文件，因此可以在该文件的同级目录创建一个
+文件夹，来存放其他文件，访问地址则是/文件夹名/文件名，例如创建同级文件夹page,里面创建文件about.md，则访问about.md的路径为
+/page/about.md，同理，在page文件夹内创建README.md，由于/README.md默认映射到/，因此访问该文件的路径为：/page/</p> <ul><li>目录如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>|- vuepress-demo
+    |- docs
+        |- .vuepress
+            |- public
+            |- config.js
+        |- page
+            |- about.md
+            |- README.md
+        |- README.md
+    |- package.json
+</code></pre></div><h3 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h3> <h4 id="部署到github"><a href="#部署到github" class="header-anchor">#</a> 部署到github</h4> <blockquote><p>这里部署到github上使用两个repository，第一个为<code>USERNAME.github.io</code>，用于显示页面，另一个用于项目编辑并把项目部署到<code>USERNAME.github.io</code></p></blockquote> <ul><li><p>新建第一个repository，名为<code>USERNAME.github.io</code>，USERNAME指的是github的账号名，例如我的github账号名为<code>itmacy</code>，那么新建的repository名则为
+<code>itmacy.github.io</code>，里面不需要存放任何文件，也不需要clone到本地。</p></li> <li><p>新建第二个repository，名称随意，例如我创建的是<code>VuePressBlog</code>,然后clone到本地，把自己搭建的<code>vuepress-demo</code>里面的所有文件和目录拷贝到<code>VuePressBlog</code>,
+并在<code>VuePressBlog</code>项目根目录下添加一个deploy.sh文件，在该文件里面拷贝一下内容：</p></li></ul> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token comment">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+set <span class="token punctuation">-</span>e
+
+<span class="token comment"># 生成静态文件</span>
+npm run build
+
+<span class="token comment"># 进入生成的文件夹</span>
+cd docs/.vuepress/dist
+
+<span class="token comment"># 如果是发布到自定义域名</span>
+<span class="token comment"># echo 'www.yourwebsite.com' &gt; CNAME</span>
+
+git init
+git add <span class="token punctuation">-</span>A
+git commit <span class="token punctuation">-</span>m 'deploy'
+
+<span class="token comment"># 如果你想要部署到 https://USERNAME.github.io</span>
+git push <span class="token punctuation">-</span>f git@github.com<span class="token punctuation">:</span>USERNAME/USERNAME.github.io.git master
+
+<span class="token comment"># 如果发布到 https://USERNAME.github.io/&lt;REPO&gt;  REPO=github上的项目</span>
+<span class="token comment"># git push -f git@github.com:USERNAME/&lt;REPO&gt;.git master:gh-pages</span>
+
+cd <span class="token punctuation">-</span>
+</code></pre></div><p>这样就可以把项目<code>VuePressBlog</code>和<code>USERNAME.github.io</code>关联起来，注意把<strong>USERNAME</strong>替换成自己的github账号，例如我的修改后为：
+<code>git push -f git@github.com:itmacy/itmacy.github.io.git master</code></p> <p>最后目录如下</p> <div class="language- extra-class"><pre class="language-text"><code>|- VuePressBlog
+    |- docs
+        |- .vuepress
+            |- public
+            |- config.js
+        |- page
+            |- about.md
+            |- README.md
+        |- README.md
+    |- deploy.sh
+    |- package.json
+</code></pre></div><ul><li>在package.json添加一个命令</li></ul> <blockquote><p>windows下：</p></blockquote> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	 <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;start deploy.sh&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>linux或mac下（未试过）</p></blockquote> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	 <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><ul><li>运行指令,部署项目</li></ul> <blockquote><p><code>npm run deploy</code></p></blockquote> <ul><li>访问</li></ul> <blockquote><p><code>https://USERNAME.github.io/</code>，例如访问我的：<code>https://itmacy.github.io/</code>。</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/30/2019, 11:21:39 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5b174765.js" defer></script><script src="/assets/js/2.be714178.js" defer></script><script src="/assets/js/8.c16753be.js" defer></script>
+  </body>
+</html>
